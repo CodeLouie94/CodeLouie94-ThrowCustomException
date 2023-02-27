@@ -1,5 +1,6 @@
+import java.io.FileNotFoundException;
 
-public class Lab {
+public class Lab{
 
     /**
      * This method should throw a CustomException. CustomException is a custom exception that we've written ourselves
@@ -15,8 +16,8 @@ public class Lab {
      * a method thrown to it. A try/catch block would handle the exception within the method. The tests, on the other
      * hand, are using a try/catch block to catch the exception thrown by this method.
      */
-    public void throwCustomException(){
-
+    public void throwCustomException() throws CustomException{
+        throw new CustomException();
     }
 
 }
